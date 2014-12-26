@@ -1,4 +1,8 @@
 @media all and (max-width: 800px) {
+	.hide-on-mobile {
+		display: none;
+	}
+
 	.sidebar {
 		position: relative;
 		width: 100%;
@@ -10,9 +14,6 @@
 		color: #fff;
 		font-size: 15px;
 
-		background: $darkGray no-repeat center center;
-		background-size: cover;
-		background-position: 20%;
 		-webkit-transform: translateZ(0);
 
 		.description {
@@ -25,7 +26,16 @@
 		}
 
 		.logo {
-			margin-top: 50px;
+			margin-top: 125px;
+			max-width: 150px;
+			float: right;
+		}
+
+		.subheader {
+			position: absolute;
+			bottom: 0;
+			right: 180px;
+			margin-bottom: 10px;
 		}
 	}
 

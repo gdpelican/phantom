@@ -44,6 +44,15 @@ a {
 		margin-bottom: 10px;
 	}
 
+	.background {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		background: url('/assets/img/background.png');
+		background-size: cover;
+		z-index: -1;
+		opacity: .3;
+	}
+
 	.footer {
 		position: relative;
 		bottom: 0px;
@@ -59,12 +68,13 @@ a {
 
 	.logo {
 		display: block;
-		width: 100%;
+		width: 50%;
 		max-width: $sidebarWidth;
 		height: auto;
 		background-size: contain;
 		margin: 0 auto 20px auto;
 		background: no-repeat;
+		border-radius: 100%;
 	}
 
 	.circle {
@@ -82,12 +92,16 @@ a {
 		box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
 	}
 
-	.social-icons {
+	.icon-section {
 		margin-top: 10px;
 	}
 
 	.icon {
 		font-size: 18px;
+	}
+
+	.icon-img img {
+		width: 25px;
 	}
 }
 
