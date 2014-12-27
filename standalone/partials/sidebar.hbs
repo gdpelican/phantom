@@ -1,5 +1,6 @@
 <div class="sidebar" role="aside" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 		<header class="header">
+			<div class="background"></div>
 			{{#if @blog.logo}}
 			<a href="/">
 				<img id="blog" class="logo" src="{{@blog.logo}}">
@@ -8,22 +9,20 @@
 			<h1 class="title"><a href="/">{{@blog.title}}</a></h1>
 			{{/if}}
 
-			<div class="separator"></div>
-
-			<p class="description">{{@blog.description}}</p>
-			<div class="social-icons">
-				<a href="https://github.com/gdpelican" class="icon icon-github"></a>
-				<a href="https://twitter.com/gdpelican" class="icon icon-twitter"></a>
-				<a href="/rss" class="icon-rss"></a>
-				<a href="mailto:james.kiesel@gmail.com" class="icon-mail"></a>
-			</div>
-			<div class="employer-icons">
-				<a href="https://github.com/loomio/loomio" class="icon icon-loomio">
-					<img src="/img/loomio.png" />
-				</a>
-				<a href="https://www.snipsnap.it" class="icon icon-snipsnap">
-					<img src="/img/snipsnap.png" />
-				</a>
+			<div class="subheader">
+				<p class="description">{{@blog.description}}</p>
+				<div class="icon-section social-icons">
+					<a href="https://github.com/gdpelican" class="icon icon-github"></a>
+					<a href="https://facebook.com/james.kiesel" class="icon-facebook-squared"></a>
+					<a href="https://twitter.com/gdpelican" class="icon icon-twitter"></a>
+					<a href="/rss" class="icon-rss"></a>
+					<a href="mailto:james.kiesel@gmail.com" class="icon-mail"></a>
+				</div>
+				<div class="icon-section employer-icons hide-on-mobile">
+					<a href="https://github.com/loomio/loomio" class="icon-img icon-loomio"><img src="/assets/img/loomio.png" /></a>
+					<a href="https://www.snipsnap.it/" class="icon-img icon-snipsnap"><img src="/assets/img/snipsnap.png" /></a>
+					<a href="http://www.enspiral.com/" class="icon-img icon-dev-academy"><img src="/assets/img/enspiral.png" /></a>
+				</div>
 			</div>
 		</header>
 	</div>
